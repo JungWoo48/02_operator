@@ -66,7 +66,14 @@ public class OperatorPractice {
 		System.out.printf("평균 : %.1f", avg);
 			
 			
-			
-				
+
+		
+		boolean result = (input1 >= 40) && (input2 >= 40) && (input3 >= 40) && (avg >= 60);
+		
+		System.out.println(result ? "합격" : "불합격");
+		//모든 과목의 점수가 40점이 넘고 평균이 60이 넘어야만 합격인 구문
+		
+		
+		
 	}
 }
