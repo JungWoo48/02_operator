@@ -7,8 +7,8 @@ public class PracticeRun {
 		OperatorPractice pr = new OperatorPractice(); 
 		
 		
-	 pr.Pr1();
-	 pr.pr2();
+	// pr.Pr1();
+	 //pr.pr2();
 	 pr.pr3();
 		
 		

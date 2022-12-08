@@ -25,22 +25,23 @@ public class OperatorPractice {
 		System.out.print("이름 :");
 		String input1 = sc.next();
 		
-		System.out.print("학년 :");
-		String input2 = sc.next();
+		System.out.print("학년(정수만) :");
+		int input2 = sc.nextInt();
 		
-		System.out.print("반 :");
-		String input3 = sc.next();
+		System.out.print("반(정수만) :");
+		int input3 = sc.nextInt();
 		
-		System.out.print("번호 :");
-		String input4 = sc.next();
+		System.out.print("번호(정수만) :");
+		int input4 = sc.nextInt();
 		
-		System.out.println("성별 : " + " 남학생");
+		System.out.print("성별(남학생/여학생) : " );
+		String gender = sc.next();
 		
-		System.out.print("성적 : ");
+		System.out.print("성적(소수점 아래 둘쨰 자리까지) : ");
 		double input5 = sc.nextDouble();
 		
-		System.out.print(input2 + " 학년" + "\s" + input3 + "반" + "\s" + input4 + "번호" + "\s" + 
-							"남학생의 성적은" + "\s" + input5 + "이다.");
+		System.out.printf("%d학년 %d반 %d번 %s %s의 성적은 %.2f점 입니다.",
+				input2, input3, input4, input1, gender, input5);//%.2f는 소수점 둘째자리까지 표현한다는 뜻
 
 		}
 	
@@ -57,8 +58,12 @@ public class OperatorPractice {
 		System.out.print("수학 :");
 			int input3 = sc.nextInt();
 			
-		System.out.println("합계 : " + (input2 + input1 + input3));
-		System.out.println("평균 : " + (input2 + input1 + input3) / 3);
+			int sum = input1 + input2 + input3;
+			double avg = sum / 3;
+			
+			
+		System.out.println("합계 : " + sum);
+		System.out.printf("평균 : %.1f", avg);
 			
 			
 			
